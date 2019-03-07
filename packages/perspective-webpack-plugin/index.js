@@ -82,6 +82,7 @@ class PerspectiveWebpackPlugin {
 
         rules.push({
             test: /\.js$/,
+            include: this.options.load_path,
             loader: "source-map-loader"
         });
 
